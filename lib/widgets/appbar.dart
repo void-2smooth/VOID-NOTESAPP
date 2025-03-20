@@ -24,7 +24,7 @@ class CstmAppbar extends StatelessWidget implements PreferredSizeWidget {
           const SizedBox(height: 4),
           Row(
             children: [
-              CustomDevider(),
+             CustomDivider(),
               SizedBox(width: 5),
               
             ],

@@ -36,7 +36,7 @@ class SettingsScreen extends StatelessWidget {
                   SizedBox(height: 2),
                   Text("Username", style: TextStyle(fontSize: 25)),
                   SizedBox(height: 15),
-                  CustomDevider(),
+                  CustomDivider(),
                 ],
               ),
             ],

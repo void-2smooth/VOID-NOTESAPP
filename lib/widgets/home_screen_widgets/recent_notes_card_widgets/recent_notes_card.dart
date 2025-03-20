@@ -38,7 +38,7 @@ class RecentNotesCard extends StatelessWidget {
                       fontSize: 20,
                     ),
                   ),
-                  CustomDevider(),
+                  CustomDivider(),
                 ],
               ),
               Spacer(),
@@ -79,7 +79,7 @@ class RecentNotesCard extends StatelessWidget {
                       color: Theme.of(context).colorScheme.onPrimary,
                     ),
                   ),
-                  CustomDevider(),
+                  CustomDivider(),
                   SizedBox(height: 10),
                   Expanded(
                     child: AutoSizeText(
