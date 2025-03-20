@@ -13,16 +13,16 @@ class SettingsScreen extends StatelessWidget {
         leading: IconButton(
           onPressed: () {
             Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context) => HomeScreen()),
+              MaterialPageRoute(builder: (context) => const HomeScreen()),
             );
           },
-          icon: Icon(Icons.home),
+          icon: const Icon(Icons.home),
         ),
         backgroundColor: Theme.of(context).colorScheme.onPrimary,
       ),
       body: Column(
         children: [
-          SizedBox(height: 55),
+          const SizedBox(height: 55),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -33,59 +33,69 @@ class SettingsScreen extends StatelessWidget {
                     size: 150,
                     color: Theme.of(context).colorScheme.secondary,
                   ),
-                  SizedBox(height: 2),
-                  Text("Username", style: TextStyle(fontSize: 25)),
-                  SizedBox(height: 15),
-                  CustomDivider(),
+                  const SizedBox(height: 2),
+                  const Text(
+                    "Username",
+                    style: TextStyle(fontSize: 25),
+                  ),
+                  const SizedBox(height: 15),
+                  const CustomDivider(width: 200),
                 ],
               ),
             ],
           ),
-          SizedBox(height: 45,),
-            Padding(
+          const SizedBox(height: 45),
+          Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Column(
               children: [
-              ListTile(
-                leading: Icon(Icons.notifications),
-                title: Text("Notifications"),
-                trailing: Switch(
-                value: true,
-                onChanged: (bool value) {
-                  // Handle toggle logic here
-                },
+                // Notifications toggle
+                ListTile(
+                  leading: const Icon(Icons.notifications),
+                  title: const Text("Notifications"),
+                  trailing: Switch(
+                    value: true,
+                    onChanged: (bool value) {
+                      // TODO: Handle toggle logic
+                    },
+                  ),
                 ),
-              ),
-              Divider(),
-              ListTile(
-                leading: Icon(Icons.lock),
-                title: Text("Privacy"),
-                trailing: Icon(Icons.arrow_forward_ios),
-                onTap: () {
-                // Handle navigation to privacy settings
-                },
-              ),
-              Divider(),
-              ListTile(
-                leading: Icon(Icons.color_lens),
-                title: Text("Theme"),
-                trailing: Icon(Icons.arrow_forward_ios),
-                onTap: () {
-                // Handle navigation to theme settings
-                },
-              ),
-              Divider(),
-              ListTile(
-                leading: Icon(Icons.info),
-                title: Text("About"),
-                trailing: Icon(Icons.arrow_forward_ios),
-                onTap: () {
-                // Handle navigation to about section
-                },
-              ),
+                const Divider(),
+
+                // Privacy navigation
+                ListTile(
+                  leading: const Icon(Icons.lock),
+                  title: const Text("Privacy"),
+                  trailing: const Icon(Icons.arrow_forward_ios),
+                  onTap: () {
+                    // TODO: Navigate to privacy settings
+                  },
+                ),
+                const Divider(),
+
+                // Theme navigation
+                ListTile(
+                  leading: const Icon(Icons.color_lens),
+                  title: const Text("Theme"),
+                  trailing: const Icon(Icons.arrow_forward_ios),
+                  onTap: () {
+                    // TODO: Navigate to theme settings
+                  },
+                ),
+                const Divider(),
+
+                // About navigation
+                ListTile(
+                  leading: const Icon(Icons.info),
+                  title: const Text("About"),
+                  trailing: const Icon(Icons.arrow_forward_ios),
+                  onTap: () {
+                    // TODO: Navigate to about section
+                  },
+                ),
               ],
             ),
-            ),
+          ),
         ],
       ),
     );

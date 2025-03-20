@@ -108,3 +108,11 @@ class RecentNotesCard extends StatelessWidget {
     );
   }
 }
+
+
+
+// TODO: RecentNotesCard
+//! optimize  
+//! make it scaleable  
+//! add more features
+//! make it functional

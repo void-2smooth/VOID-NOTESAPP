@@ -10,3 +10,7 @@ class Favorites extends StatelessWidget {
     
   }
 }
+
+
+// TODO: Favorites
+//! Add stuff to this screen

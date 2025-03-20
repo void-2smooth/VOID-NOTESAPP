@@ -31,3 +31,9 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+
+// TODO: HomeScreen
+//! optimize the screen 
+//! make it scaleable  
+//! add more features
